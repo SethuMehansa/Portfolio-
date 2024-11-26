@@ -12,9 +12,11 @@ color: white;
 
 }
 nav{
-    display: flex;
-     justify-content: right;
-
+    border-radius: 40px;
+    height: 60px;
+    background-color: rgb(247, 239, 239);
+    position: fixed;
+    z-index: 1;
 }
 
 nav ul li{
@@ -35,7 +37,7 @@ nav ul li a:hover{
     padding: 10px;
     text-decoration: none;
     color: rgb(250, 247, 247);
-    font-family:"Montserrat", serif;;
+    font-family:"Montserrat", serif;
     }
 .image{
 margin: 50px;    
@@ -44,13 +46,10 @@ border-radius: 100px;
 box-shadow: 10px 10px 8px 0 rgba(10, 8, 8, 0.229), 10px 10px 20px 0 rgb(0, 0, 0);
 }
 .text{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Montserrat", serif;
     margin: 20px;
 color: white;
 
-}
-.colapse{
-    border-bottom: solid white;
 }
 
 .icon{
@@ -59,5 +58,53 @@ margin: 10px;
 font-size: 50px;
 }
 .icon :hover{
-    color: black;
+    transition: 59ms;
+    color: rgb(66, 2, 2);
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+.bg {
+    background-image: url("images/portfolio\ bg.png")
+}
+.more{
+
+background-color: transparent;
+color: white;
+border-style: hidden;
+font-family:"Montserrat", serif ;
+margin: 10px;
+}
+
+.more.hiddentext{
+    font-family:"Montserrat", serif;
+    margin: 20px;
+color: white;
+border-bottom: solid 20px;
+max-height: 0;
+overflow: hidden;
+}
+.more.hiddentext:hover{
+   transition: 1s;
+    max-height: 300px;
+}
+
+.work{
+   height: 400px;
+   width: 400px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.work:hover{
+    transition: 59ms;
+    width: 550px;
+    border: 10px;
+    border-style:double;
+    border-color: white;
+}
+#workarea{
+    max-height: fit-content;
+    margin: 20px;
+    background-color: transparent;
+    overflow: scroll;
 }
