@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Fuzzy+Bubbles:wght@400;700&family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 #header{
-    width: 100%;
+    width: 120%;
     height: 60px;
     background-color: rgb(247, 239, 239);
 }
@@ -12,6 +12,7 @@ color: white;
 
 }
 nav{
+    
     border-radius: 40px;
     height: 60px;
     background-color: rgb(247, 239, 239);
@@ -22,7 +23,7 @@ nav{
 nav ul li{
     display:inline-block;
     list-style: none;
-    margin: 20px;
+    margin: 10px;
 }
 nav ul li a{
 text-decoration: none;
@@ -41,7 +42,7 @@ nav ul li a:hover{
     }
 .image{
 margin: 50px;    
-max-width: 500px;
+width: 100%;
 border-radius: 100px;
 box-shadow: 10px 10px 8px 0 rgba(10, 8, 8, 0.229), 10px 10px 20px 0 rgb(0, 0, 0);
 }
@@ -64,7 +65,7 @@ font-size: 50px;
     border-radius: 20px;
     padding: 10px;
 }
-.bg {
+body{
     background-image: url("images/portfolio\ bg.png")
 }
 .more{
@@ -90,8 +91,8 @@ overflow: hidden;
 }
 
 .work{
-   height: 400px;
-   width: 400px;
+    max-height: 100%;
+   max-width: 100%;
     border-radius: 20px;
     margin: 10px;
 }
@@ -102,9 +103,9 @@ overflow: hidden;
     border-style:double;
     border-color: white;
 }
-#workarea{
+.displayworkarea{
     max-height: fit-content;
     margin: 20px;
     background-color: transparent;
-    overflow: scroll;
+
 }
